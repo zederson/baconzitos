@@ -1,0 +1,6 @@
+framework module Pods_baconzitosTests {
+  umbrella header "Pods-baconzitosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
