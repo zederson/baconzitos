@@ -10,6 +10,8 @@
 		1462AFB2D0ABFF10029187A5 /* Pods_baconzitosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183369DA9F17CE144BDB62BD /* Pods_baconzitosTests.framework */; };
 		7A3D99E7FD5A654E92A22C83 /* Pods_baconzitos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A2511B4C675105B81AC7F6 /* Pods_baconzitos.framework */; };
 		7A5D47698E09BC20100AB5EB /* Pods_baconzitosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C23BE4DADE049F3890DCC2C /* Pods_baconzitosUITests.framework */; };
+		9947513F1EA4276F002881B1 /* simpsons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9947513E1EA4276F002881B1 /* simpsons.jpg */; };
+		994751411EA42B2D002881B1 /* corinthians.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 994751401EA42B2D002881B1 /* corinthians.jpg */; };
 		9956200C1EA15A9D00009BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956200B1EA15A9D00009BF4 /* AppDelegate.swift */; };
 		995620131EA15A9D00009BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 995620121EA15A9D00009BF4 /* Assets.xcassets */; };
 		995620161EA15A9D00009BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995620141EA15A9D00009BF4 /* LaunchScreen.storyboard */; };
@@ -17,6 +19,10 @@
 		9956202C1EA15A9D00009BF4 /* baconzitosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956202B1EA15A9D00009BF4 /* baconzitosUITests.swift */; };
 		9956203E1EA15B4F00009BF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956203A1EA15B4F00009BF4 /* HomeViewController.swift */; };
 		9956203F1EA15B4F00009BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9956203D1EA15B4F00009BF4 /* Main.storyboard */; };
+		998524251EA1641E007E18E8 /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998524231EA1641E007E18E8 /* ItemViewController.xib */; };
+		998524271EA1643E007E18E8 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998524261EA1643E007E18E8 /* ItemViewController.swift */; };
+		9985242A1EA16590007E18E8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998524291EA16590007E18E8 /* Item.swift */; };
+		9985242C1EA167EC007E18E8 /* ShowItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9985242B1EA167EC007E18E8 /* ShowItemDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,8 @@
 		6C23BE4DADE049F3890DCC2C /* Pods_baconzitosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baconzitosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A2511B4C675105B81AC7F6 /* Pods_baconzitos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baconzitos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A51789A4517A3016483C931 /* Pods-baconzitosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baconzitosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-baconzitosUITests/Pods-baconzitosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9947513E1EA4276F002881B1 /* simpsons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = simpsons.jpg; path = ../../../../../Downloads/simpsons.jpg; sourceTree = "<group>"; };
+		994751401EA42B2D002881B1 /* corinthians.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = corinthians.jpg; path = ../../../../../Downloads/corinthians.jpg; sourceTree = "<group>"; };
 		995620081EA15A9D00009BF4 /* baconzitos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baconzitos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9956200B1EA15A9D00009BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995620121EA15A9D00009BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +64,10 @@
 		9956202D1EA15A9D00009BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9956203A1EA15B4F00009BF4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9956203D1EA15B4F00009BF4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		998524231EA1641E007E18E8 /* ItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
+		998524261EA1643E007E18E8 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		998524291EA16590007E18E8 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9985242B1EA167EC007E18E8 /* ShowItemDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowItemDelegate.swift; sourceTree = "<group>"; };
 		D101F500B894F4F7FA72CA4F /* Pods-baconzitos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baconzitos.release.xcconfig"; path = "Pods/Target Support Files/Pods-baconzitos/Pods-baconzitos.release.xcconfig"; sourceTree = "<group>"; };
 		D96A01730470BD06B56B4B2D /* Pods-baconzitosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baconzitosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baconzitosUITests/Pods-baconzitosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E66827FE53A02C7130CD38E0 /* Pods-baconzitosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baconzitosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baconzitosTests/Pods-baconzitosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +136,8 @@
 		9956200A1EA15A9D00009BF4 /* baconzitos */ = {
 			isa = PBXGroup;
 			children = (
+				994751401EA42B2D002881B1 /* corinthians.jpg */,
+				9947513E1EA4276F002881B1 /* simpsons.jpg */,
 				995620391EA15B4F00009BF4 /* controllers */,
 				9956203B1EA15B4F00009BF4 /* models */,
 				9956203C1EA15B4F00009BF4 /* views */,
@@ -156,6 +170,7 @@
 		995620391EA15B4F00009BF4 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				998524261EA1643E007E18E8 /* ItemViewController.swift */,
 				9956203A1EA15B4F00009BF4 /* HomeViewController.swift */,
 			);
 			path = controllers;
@@ -164,6 +179,8 @@
 		9956203B1EA15B4F00009BF4 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				998524291EA16590007E18E8 /* Item.swift */,
+				9985242B1EA167EC007E18E8 /* ShowItemDelegate.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -172,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				9956203D1EA15B4F00009BF4 /* Main.storyboard */,
+				998524231EA1641E007E18E8 /* ItemViewController.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -306,8 +324,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9956203F1EA15B4F00009BF4 /* Main.storyboard in Resources */,
+				998524251EA1641E007E18E8 /* ItemViewController.xib in Resources */,
+				994751411EA42B2D002881B1 /* corinthians.jpg in Resources */,
 				995620161EA15A9D00009BF4 /* LaunchScreen.storyboard in Resources */,
 				995620131EA15A9D00009BF4 /* Assets.xcassets in Resources */,
+				9947513F1EA4276F002881B1 /* simpsons.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,8 +491,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9985242A1EA16590007E18E8 /* Item.swift in Sources */,
 				9956200C1EA15A9D00009BF4 /* AppDelegate.swift in Sources */,
+				998524271EA1643E007E18E8 /* ItemViewController.swift in Sources */,
 				9956203E1EA15B4F00009BF4 /* HomeViewController.swift in Sources */,
+				9985242C1EA167EC007E18E8 /* ShowItemDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +738,7 @@
 				995620321EA15A9D00009BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		995620331EA15A9D00009BF4 /* Build configuration list for PBXNativeTarget "baconzitosTests" */ = {
 			isa = XCConfigurationList;
@@ -722,6 +747,7 @@
 				995620351EA15A9D00009BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		995620361EA15A9D00009BF4 /* Build configuration list for PBXNativeTarget "baconzitosUITests" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +756,7 @@
 				995620381EA15A9D00009BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
