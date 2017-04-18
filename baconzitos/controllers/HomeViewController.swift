@@ -1,42 +1,61 @@
 import UIKit
+import CoreLocation
 
-class HomeViewController: UIViewController, ShowItemDelegate {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
-    var items = Array<Item>()
-    var index = 0;
-
+    @IBOutlet var imageField : UIImageView?
+    @IBOutlet var label : UILabel?
+    
+    var locationManager = CLLocationManager()
+    let region = CLBeaconRegion(proximityUUID: UUID(uuidString: "FDA50693-A4E2-4FB1-AFCF-C6EB07647825")!, identifier: "Ze")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        items = [
-            Item(image: "simpsons.jpg", description: "Aqui esta todos os bonecos do simpsons"),
-            Item(image: "corinthians.jpg", description: "Sport Club Corinthians Paulista - Campeao de tudo")
-        ]
-    }
 
+        locationManager.delegate = self
+        
+        if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.authorizedWhenInUse) {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
+        locationManager.startRangingBeacons(in: region)
+        showImageBall(false)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func show() -> Item {
-        return items[index]
-    }
-    
-    func openItemDetails() {
-        if let navigation = navigationController {
-            let itemController = ItemViewController(delegate: self)
-            navigation.pushViewController(itemController, animated: true)
+
+    func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
+        let knownBeacons = beacons.filter{ $0.proximity != CLProximity.unknown }
+        
+        if (knownBeacons.count > 0) {
+            let closestBeacon = knownBeacons[0] as CLBeacon
+            
+            if let labelField = label {
+                labelField.text = String(format: "%.3f Metros", Double(closestBeacon.accuracy.description)!)
+            }
+            
+            if closestBeacon.accuracy < 0.80 {
+                showImageBall(true)
+                
+            } else {
+                showImageBall(false)
+            }
         }
     }
     
-    @IBAction func firstAction() {
-        index = 0
-        openItemDetails()
-    }
-    
-    @IBAction func secondAction() {
-        index = 1
-        openItemDetails()
-    }
+    func showImageBall(_ flag: Bool) {
+        if let imageView = imageField {
+            var image : UIImage?
+            
+            if flag {
+                image = UIImage(named: "esfera.png")
+            } else {
+                image = UIImage(named: "radar.png")
+            }
 
+            imageView.image = image
+        }
+    }
 }
-
